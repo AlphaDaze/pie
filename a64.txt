@@ -111,3 +111,7 @@ float_reg3              00011111 aabccccc deeeeeff fffggggg, a:type, b:o1, c:rm,
 FMOV_immed              00011110 aa1bbbbb bbb10000 000ccccc, a:type, b:imm8, c:rd
 float_cvt_fixed         a0011110 bb0ccddd eeeeeeff fffggggg, a:sf, b:type, c:rmode, d:opcode, e:scale, f:rn, g:rd
 float_cvt_int           a0011110 bb1ccddd 000000ee eeefffff, a:sf, b:type, c:rmode, d:opcode, e:rn, f:rd
+irg                     10011010 110aaaaa 000100bb bbbccccc, a:Xm, b:Xn, c:Xd
+stg                     11011001 001aaaaa aaaabbcc cccddddd, a:imm9, b:opcode, c:Xn, d:Xt
+subps                   10111010 110aaaaa 000000bb bbbccccc, a:Xm, b:Xn, c:Xd
+ldg                     11011001 011aaaaa aaaa00bb bbbccccc, a:imm9, b:Xn, c:Xt
